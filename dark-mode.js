@@ -1,12 +1,11 @@
 const darkMode = () => {
+    const themeToggleBtns = document.querySelectorAll('#theme-toggle img');
 
-    const themeToggleBtns = document.querySelector('#theme-toggle');
-
-    themeToggleBtns.foreach( btn => {
+    themeToggleBtns.forEach(btn => {
         btn.addEventListener('click', () => {
             document.body.classList.toggle('dark-mode');
         });
     });
-}; 
+};
 
 export default darkMode;

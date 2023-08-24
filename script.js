@@ -1,8 +1,10 @@
 function toggleMenu() {
-    const menu = document.querySelector(".menu-links");
-    const icon = document.querySelector(".hamburger-icon");
-    menu.classList.toggle("open")
-    icon.classList.toggle("open")
+    var menuLinks = document.querySelector('.menu-links');
+    menuLinks.classList.toggle('open');
+    var hamburgerIcon = document.querySelector('.hamburger-icon');
+    hamburgerIcon.classList.toggle('open');
 }
 
-import darkMode from "./dark-mode";
+function darkMode() {
+    document.body.classList.toggle('dark-mode');
+}
